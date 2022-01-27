@@ -1,0 +1,598 @@
+*{ 
+   /*background-color: cadetblue;*/
+   margin: 0%;
+   padding: 0%; 
+   font-family: 'Poppins', sans-serif;
+   box-sizing: border-box;
+}   
+/*.header{ 
+    background-color: brown; 
+    width: 100%;
+}*/
+nav{ 
+    display: flex; 
+    padding-right: 5%;
+    justify-content: space-between; 
+    align-items: center;  
+    background-color: brown;
+
+} 
+nav img{ 
+       padding:5px 20px;
+} 
+.nav-links{ 
+    text-align: right; 
+    
+} 
+.nav-links ul li{ 
+    list-style: none; 
+    display: inline-block; 
+    padding: 5px 25px;
+    font-size: 16px; 
+    font-weight: 900;
+    position: relative;
+} 
+.nav-links ul li a{
+     color: white; 
+     text-decoration: none; 
+     
+} 
+.nav-links a:hover{
+    background-color: cadetblue; 
+    padding: 5px; 
+    color:yellow;
+} 
+.nav-links a.active{ 
+    background-color: rgb(216, 21, 21);
+    padding: 5px;
+}   
+ 
+.nav-links .drop-down li{
+	width:170px;
+	float:none;
+	display:list-item;
+	position: relative;
+}
+ 
+.nav-item:hover .dropdown-content {
+  display: block;
+  }
+
+  .dropdown-content { 
+    text-align: center;
+    display: none;
+    position: absolute;
+    background-color: rgb(216, 21, 21);
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 10px;
+    z-index: 1; 
+  } 
+
+#login{ 
+    min-width: 190px; 
+    padding: 12px 5px; 
+}
+.image{
+    min-height: 100vh;
+    width: 100%;
+   /* background-image:url('images/slider-03.jpg');*/ 
+   background-image:url('images/img5.jpg');
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover ; 
+    text-align: center;
+} 
+.heading h2{ 
+    font-size: 65px;
+    
+} 
+.heading{  
+    width: 90%; 
+    color: yellow; 
+    position: absolute; 
+    top: 75%; 
+    left: 50%;
+    transform: translate(-50%,-50%); 
+    text-align: center;
+} 
+.heading p{ 
+    margin: 10px 0 40px; 
+    font-size: 18px; 
+    color:tomato; 
+    font-weight: 700; 
+    letter-spacing: 2px;
+} 
+.heading .visit-btn{
+    display: inline-block; 
+    text-decoration: none; 
+    border: 1px solid rgb(26, 26, 241); 
+    padding: 15px; 
+    background: transparent; 
+    position: relative; 
+    cursor: pointer;
+} 
+.heading .visit-btn:hover{ 
+    border:1px solid rgb(26, 26, 241); 
+    background-color: rgb(245, 38, 38); 
+    color: #ffff;
+} 
+
+/*---------------About------------------*/
+.about{ 
+    width: 80%;  
+    min-height: 100vh;
+    margin: auto; 
+    padding-top: 100px ;   
+} 
+.about h1{ 
+    font-size: 40px; 
+    font-weight: 600; 
+    text-align: center; 
+    letter-spacing: 1px;
+    font-family: 'Times New Roman', Times, serif;
+} 
+.about p{ 
+    font-size: 16px; 
+    font-weight: 400; 
+    line-height: 22px; 
+    padding: 0px 30px;  
+    float: left;
+    text-align: left; 
+    display: inline-block; 
+    /*border: 1px solid black; */
+    width: 50%; 
+    margin-top: 25px;
+    
+}
+.about .aboutbtn{ 
+    display: inline-block; 
+    text-decoration: none; 
+    padding:10px 20px; 
+    border: 1px solid skyblue;   
+    margin:40px; 
+    text-transform: uppercase; 
+    letter-spacing: 1px;
+    
+    
+} 
+.about .aboutbtn:hover{ 
+    background-color: teal; 
+    color: white;
+}
+.imageabout{
+    width: 50%;  
+    float: right; 
+    padding: 0px 30px; 
+    margin-top: 25px;
+} 
+.imageabout img{ 
+    width: 100%; 
+    height: auto;
+}
+@media screen and (max-width:900px){
+    .about{
+        width: 100%;
+        padding-top: 20px;
+    }
+    .about h1{
+        font-size: 32px;
+    }
+    .about p{
+        width: 100%;
+        float: none;
+    }
+    .aboutbtn{
+        margin-top: 50px; 
+        
+    }
+    .imageabout{
+        float: none;
+        width: 100%;
+        margin-top: 25px;
+    }
+} 
+ 
+/*------------------------Ifrastructure--*/ 
+.infrastructure{
+    min-height:100vh;
+    width: 100%; 
+    background-color: blue; 
+    margin-top: 10px;
+   text-align: center;
+    
+} 
+.infra h1{ 
+    font-size: 40px; 
+    font-weight: 600; 
+    text-align: center; 
+    letter-spacing: 1px;
+    font-family:Arial, Helvetica, sans-serif; 
+    color: black; 
+
+ } 
+
+ .infrastructure .building{ 
+     height: 50vh; 
+     width: 50%; 
+     background-color: chocolate;  
+     border: 2px solid black;
+    padding: 50px;    
+    float: left;  
+    font-size: x-large; 
+    font-weight: 900; 
+    background-image: url('images/building.jpg'); 
+    background-repeat: no-repeat; 
+    background-size:cover; 
+ } 
+
+ .infrastructure .library{ 
+    height: 50vh; 
+    width: 50%; 
+    background-color: rgb(202, 86, 102);   
+    background-image: url('images/library.jpg'); 
+    background-repeat: no-repeat; 
+    background-size:cover; 
+    border: 2px solid rgb(131, 9, 9);   
+    border-radius: 3px;
+   margin-left: 50%;
+   padding: 50px; 
+   font-size: x-large; 
+    font-weight: 900;
+    
+}   
+
+.infrastructure .hostel{ 
+    height: 50vh; 
+    width: 50%; 
+    background-color: rgb(15, 160, 22);  
+    background-image: url('images/hostel.jpg'); 
+    background-repeat: no-repeat; 
+    background-size:cover;  
+    border: 2px solid white; 
+    margin-left: 50%; 
+    padding: 50px; 
+    font-size: x-large; 
+    font-weight: 900;
+}
+.infrastructure .ground{ 
+    height: 50vh; 
+    width: 50%; 
+    background-color: black;   
+    background-image: url('images/ground.jpg'); 
+    background-repeat: no-repeat; 
+    background-size:cover;  
+    border: 2px solid rgb(129, 36, 141);
+    float: left;
+    padding: 50px; 
+    font-size: x-large; 
+    font-weight: 900;
+} 
+.infrastructure  a{ 
+    text-decoration: none; 
+
+} 
+.infrastructure  a:hover{ 
+    background-color: darkmagenta; 
+    padding: 10px; 
+    border-radius: 10px;
+} 
+
+/*-----------------Building page---------------*/  
+.infrastructure-building{ 
+    min-height:100vh;
+    width: 100%; 
+    background-color: thistle;
+    margin-top: 10px;
+}
+.info{  
+    height: 100vh; 
+    width: 45%; 
+    background-color: rgb(226, 226, 223);
+    border: 1px solid rgb(94, 11, 29); 
+    border-radius: 10px; 
+
+    float: left; 
+    margin-left: 5px 
+    
+}  
+.infrastructure-building .building{ 
+    height: 50vh; 
+    width: 50%; 
+    border: 1px solid;
+   padding: 50px;     
+   border-radius: 10px;
+   float: left;  
+   font-size: x-large; 
+   font-weight: 900; 
+   background-image: url('images/building.jpg'); 
+   background-repeat: no-repeat; 
+   background-size:cover; 
+} 
+.infrastructure-building .facilities{ 
+    padding-left: 30px;
+} 
+/*---------------Liabrary page--------------------*/
+.infrastructure-library .library{ 
+    height: 50vh; 
+    width: 100%; 
+    border: 1px solid;
+   padding: 50px;     
+   border-radius: 10px;
+   float: left;  
+   font-size: x-large; 
+   font-weight: 900; 
+   background-image: url('images/library.jpg'); 
+   background-repeat: no-repeat; 
+   background-size:cover; 
+}  
+.info-library{  
+    
+    width: 100%; 
+    background-color: rgb(226, 226, 223);
+    border: 1px solid rgb(94, 11, 29); 
+    border-radius: 10px; 
+
+    float: left; 
+    margin-left: 5px 
+    
+}  
+.infrastructure-library .facilities-library{ 
+    padding-left: 30px;
+}  
+/*-------------------------Hostel page-----------*/
+
+.infrastructure-hostel .hostel{ 
+    height: 100vh; 
+    width: 100%; 
+    border: 1px solid;
+   padding: 50px;     
+   border-radius: 10px;
+   float: left;  
+   font-size: x-large; 
+   font-weight: 900; 
+   background-image: url('images/hostel.jpg'); 
+   background-repeat: no-repeat; 
+   background-size:cover; 
+}  
+.info-hostel{  
+    
+    width: 100%; 
+    background-color: rgb(226, 226, 223);
+    border: 1px solid rgb(94, 11, 29); 
+    border-radius: 10px; 
+
+    float: left; 
+    margin-left: 5px 
+    
+}  
+.infrastructure-hostel .facilities-hostel{ 
+    padding-left: 30px;
+}   
+
+/*-----------------Ground page---------------*/ 
+.infrastructure-building{ 
+    min-height:100vh;
+    width: 100%; 
+    background-color: thistle;
+    margin-top: 10px;
+}
+.info{  
+    height: 100vh; 
+    width: 45%; 
+    background-color: rgb(226, 226, 223);
+    border: 1px solid rgb(94, 11, 29); 
+    border-radius: 10px; 
+
+    float: left; 
+    margin-left: 5px 
+    
+}  
+.infrastructure-building .building{ 
+    height: 50vh; 
+    width: 50%; 
+    border: 1px solid;
+   padding: 50px;     
+   border-radius: 10px;
+   float: left;  
+   font-size: x-large; 
+   font-weight: 900; 
+   background-image: url('images/ground.jpg'); 
+   background-repeat: no-repeat; 
+   background-size:cover; 
+} 
+.infrastructure-building .facilities{ 
+    padding-left: 30px;
+} 
+/*------------------------------Gallary-----------------------------*/
+.gallary{ 
+    /*background-color: cornflowerblue; */
+    min-height: auto; 
+    width: 100%;
+}
+ .gallary h1{ 
+    font-size: 40px; 
+    font-weight: 600; 
+    text-align: center; 
+    letter-spacing: 1px;
+    font-family: 'Times New Roman', Times, serif; 
+    color: black; 
+
+ } 
+ .gallary-img{ 
+     border: 1px solid #ccc;
+ } 
+.gallary-img img{
+    width: 100%; 
+    height: auto;
+ } 
+ .des{ 
+      padding: 15px;
+      text-align: center;
+ }
+ .main{
+     padding: 0px 5px;
+     float: left;
+     width: 25%;
+     margin-top: 30px; 
+    padding-bottom: 30px;  
+    } 
+ @media only screen and (max-width:700px){
+     .main{ 
+         width: 50%; 
+         margin: 5px 0; 
+     }
+
+ } 
+ @media only screen and (max-width:500px){
+    .main{ 
+        width: 100%; 
+        
+    }
+    
+}   
+/*-----------------------------CONTACT US ----*/
+   .contact{ 
+        width: 100%; 
+        min-height: auto; 
+        
+   } 
+   .contact h1{  
+    margin-top: 40px;
+    font-size: 40px; 
+    font-weight: 600; 
+    text-align: center; 
+    letter-spacing: 1px;
+    font-family: 'Times New Roman', Times, serif; 
+    color: black;  
+   }  
+   .feedback{ 
+    display: flex; 
+    min-height: 100vh; 
+    align-items: center; 
+    justify-content: center; 
+  /*  background-image: url('images/img10.jpg'); */
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-position: center; 
+    
+   background-color: rgb(159, 164, 170);
+}
+   .contact .feedback-form{ 
+    width: 50%; 
+    color: white;
+    background-color:#000; 
+    
+    display: flex;  
+    box-shadow: 0 0 8px rgb(43, 208, 219,1.5); 
+    opacity: 1,5;
+    border-radius: 3px;
+   }  
+   .feedback form{ 
+       width: 100%; 
+       text-align: center; 
+       padding: 25px 20px; 
+       color: white;
+   }
+ .feedback form h2{ 
+     padding: 20px 0px; 
+     letter-spacing: 1px; 
+     
+ } 
+ .feedback .id{ 
+     position: relative;
+ }  
+ .feedback .id i{ 
+     position: absolute; 
+     font-size: 20px; 
+     top:50%; 
+     right: 20px; 
+     transform: translateY(-50%);
+ }
+ .feedback form input{ 
+     width: 100%; 
+     height: 50px; 
+     margin: 4px 0; 
+     border: 1px solid gray;  
+     border-radius: 3px;
+     background-color: #181717; 
+     padding: 0 15px; 
+     font-size: 20px; 
+     padding-right: 45px;
+     color: white;
+ } 
+ .feedback form textarea{ 
+     padding: 5px 15px; 
+     border: 1px solid gray;  
+     border-radius: 3px;
+     background-color: #181717; 
+     font-size: 20px; 
+     width: 100%; 
+     margin: 4px 0px; 
+     color: white;
+ }
+ .feedback form button{ 
+     margin-top: 5px; 
+     border: none; 
+     background-color: #00fff0; 
+     color: #222; 
+     padding:10px 0px; 
+     width: 100%; 
+     font-size: 20px; 
+     font-weight: 800; 
+     cursor: pointer ; 
+     border-radius: 3px;
+ } 
+ .feedback form input:focus, 
+ .feedback form textarea{
+     border:1px solid #00fff0; 
+     color: #00fff0; 
+     transition: all 0.3s ease;
+ } 
+ .feedback form input:focus::placeholder, 
+ .feedback form textarea::placeholder{
+     border:1px solid #00fff0; 
+     color: #00fff0; 
+     transition: all 0.3s ease;
+ }
+ .feedback form input:focus + i{ 
+     
+    color: #00fff0; 
+    transition: all 0.3s ease;
+
+ } 
+ /*------------------------MAP-----------*/ 
+ .map{ 
+     min-height: 50vh; 
+     width: 50%; 
+     background-color: rgb(160, 160, 153); 
+     position:relative;
+      height:0; 
+      overflow:hidden;   
+      margin-left: 25%;
+      
+ }  
+ .frame{ 
+        width: 100%; 
+        height: 100%;  
+
+ }
+ 
+.map iframe{ 
+    padding-top: 10px;
+       left:0;
+       top:0; 
+      height:100%;
+       width:100%;
+     position:absolute;  
+     padding-bottom: 20px; 
+
+
+}
+     /*---------------F00TER-------------*/
+ 
+
+.footer{ 
+    min-height: 100vh; 
+    width: 100%; 
+    background-color: chartreuse;
